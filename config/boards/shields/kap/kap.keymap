@@ -32,46 +32,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        hmf: homerow_mods_fast {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods fast";
-            #binding-cells = <2>;
-            tapping-term-ms = <90>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        tdlctrl: tap_dance_lctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LCTRL";
-            #binding-cells = <0>;
-            tapping-term-ms = <TD_TIMEOUT>;
-            bindings = <&kp LCTRL>, <&kp LSHFT>;
-        };
-
-        tdlalt: tap_dance_lalt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LALT";
-            #binding-cells = <0>;
-            tapping-term-ms = <TD_TIMEOUT>;
-            bindings = <&kp LALT>, <&kp LGUI>;
-        };
-
-        /*tdk: tap_dance_k {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_K";
-            #binding-cells = <0>;
-            tapping-term-ms = <SHORT_TD_TIMEOUT>;
-            bindings = <&hmf RALT K>;
-        };*/
-
-        enc_scroll: encoder_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&scroll_down>, <&scroll_up>;
-        };
     };
 };
 
