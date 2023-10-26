@@ -1,0 +1,16 @@
+if SHIELD_KAP_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "kap"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_KAP_LEFT || SHIELD_KAP_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,12 @@
+file_format: "1"
+id: kap
+name: kap
+type: shield
+url: https://github.com/waht/kap
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+siblings:
+  - kap_left
+  - kap_right
