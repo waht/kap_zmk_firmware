@@ -105,7 +105,7 @@
 // |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//         |   UP   |  SPACE  | LEFT  |  RIGHT  | RESET  |        |  RETURN |  RESET  |
+//         |   SHIFT  |  SPACE  | LEFT  |  RIGHT  | RESET  |        |  RETURN |  RESET  |
             bindings = <
     &lt NAV Q   &kp W       &kp E       &kp R       &kp T                         &kp Y   &kp U       &kp I       &kp O         &kp P
     &kp A       &hm LSHFT S &hm LALT D  &hm LCTRL F &kp G                         &kp H   &hm RCTRL J &hm RALT K  &hm RSHFT L   &hm RGUI SEMI
@@ -127,7 +127,7 @@
             bindings = <
     &trans &trans &trans &trans &trans          &kp F1  &kp F2       &kp F3      &kp F4          &kp F5
     &trans &trans &trans &trans &trans          &kp F6  &hm RCTRL F7 &hm LALT F8 &hm RSHFT F9    &hm RGUI F10
-    &trans &trans &trans &trans &trans          &kp F11 &kp F12      &kp PSCRN   &kp PAUSE_BREAK
+    &trans &trans &trans &trans &trans          &trans  &kp F11 &kp F12      &kp PSCRN   &kp PAUSE_BREAK 
       &trans &trans &trans &trans &trans       &trans  &none
             >;
         };
@@ -136,7 +136,7 @@
             bindings = <
     &kp ESC  &kp TAB   &kp LS(TAB) &kp K_APP    &kp ESC         &none    &kp LC(LEFT) &kp UP    &kp LC(RIGHT) &kp BSPC
     &kp LGUI &kp LSHFT &kp LALT    &kp LCTRL    &none           &none    &kp LEFT     &kp DOWN  &kp RIGHT     &hm RGUI DEL
-    &mo BT   &none     &none       &none        &none           &kp HOME &kp END      &kp PG_UP &kp PG_DN     &none
+    &mo BT   &none     &none       &none        &none           &none    &kp HOME     &kp END   &kp PG_UP     &kp PG_DN
       &trans   &trans    &trans      &trans       &trans      &trans   &trans
             >;
         };
@@ -145,7 +145,7 @@
             bindings = <
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &rgb_ug RGB_TOG  &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_BRD &bt BT_CLR
     &out OUT_USB &out OUT_BLE &bt BT_CLR   &none        &none                &rgb_ug RGB_COLOR_HSB(139, 100, 39)  &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_HUD &none
-    &none        &none        &none        &none        &none                &rgb_ug RGB_EFF  &rgb_ug RGB_EFR &rgb_ug RGB_SPI &rgb_ug RGB_SPD
+    &none        &none        &none        &none        &none                &none &rgb_ug RGB_EFF  &rgb_ug RGB_EFR &rgb_ug RGB_SPI &rgb_ug RGB_SPD
       &bootloader  &sys_reset       &none        &none        &none        &trans &none
             >;
         };
