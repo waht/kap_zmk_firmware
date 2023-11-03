@@ -89,11 +89,7 @@
             key-positions = <22 23>;
             bindings = <&kp LC(V)>;
         };
-        combo_bn_space {
-            timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <24 25>;
-            bindings = <&lt NUM_SYM SPACE>;
-        };
+        
     };
 };
 / {
