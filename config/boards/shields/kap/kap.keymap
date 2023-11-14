@@ -109,7 +109,7 @@
             bindings = <
     &lt NAV Q   &kp W       &kp E       &kp R       &kp T                         &kp Y   &kp U       &kp I       &kp O         &kp P
     &kp A       &hm LSHFT S &hm LALT D  &hm LCTRL F &kp G                         &kp H   &hm RCTRL J &hm RALT K  &hm RSHFT L   &hm RGUI SEMI
-    &hm LSHFT Z &kp X       &kp C       &kp V       &kp B                         &kp N   &kp M       &kp COMMA   &hm RSHFT DOT &lt FUN FSLH
+    &hm LSHFT Z &lt FUN X   &kp C       &kp V       &kp B                         &kp N   &kp M       &kp COMMA   &hm RSHFT DOT &lt FUN FSLH
                 &mo BT  &lt NUM_SYM SPACE &kp RIGHT &kp LEFT &bootloader    &hm RSHFT RET &bootloader
             >;
         };
@@ -118,7 +118,7 @@
             bindings = <
     &lt NAV N1    &kp N2        &kp N3        &kp N4         &kp N5               &kp N6    &kp N7         &kp N8        &kp N9          &kp N0
     &kp DQT       &hm LSHFT SQT &hm LALT LPAR &hm LCTRL RPAR &kp GRAVE            &kp MINUS &hm RCTRL LBRC &hm LALT RBRC &hm RSHFT EQUAL &trans
-    &lt FUN BSLH  &trans        &kp LBKT      &kp RBKT       &kp UNDER            &kp PLUS  &kp MINUS      &trans        &trans          &trans
+    &kp BSLH      &trans        &kp LBKT      &kp RBKT       &kp UNDER            &kp PLUS  &kp MINUS      &trans        &trans          &trans
                 &trans      &trans             &trans   &trans   &trans        &trans   &trans
             >;
         };
