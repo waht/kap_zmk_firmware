@@ -29,7 +29,7 @@
 
 / {
     behaviors {
-        hml: homerow_mods {
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods left";
             #binding-cells = <2>;
@@ -41,7 +41,7 @@
             hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
-        hmr: homerow_mods {
+        hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods right";
             #binding-cells = <2>;
