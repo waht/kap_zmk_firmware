@@ -39,6 +39,17 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
+        hmnav: homerow_mods_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods nav";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <TAP_TIMEOUT>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R>;
+            hold-trigger-on-release;
+        };
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods left";
@@ -170,9 +181,9 @@
         
         num_sym {
             bindings = <
-    &lt NAV N1    &kp N2        &kp N3        &kp N4         &kp N5               &kp N6    &kp N7         &kp N8        &kp N9          &kp N0
+    &lt NAV N1    &kp N2           &kp N3        &kp N4         &kp N5               &kp N6    &kp N7         &kp N8        &kp N9          &kp N0
     &kp DQT       &hm LSHFT SQT &hm LALT LPAR &hm LCTRL RPAR &kp GRAVE            &kp MINUS &hm RCTRL LBRC &hm LALT RBRC &hm RSHFT EQUAL &trans
-    &kp BSLH      &trans        &kp LBKT      &kp RBKT       &kp UNDER            &kp PLUS  &kp MINUS      &trans        &trans          &trans
+    &kp BSLH      &trans           &kp LBKT      &kp RBKT       &kp UNDER            &kp PLUS  &kp MINUS      &trans        &trans          &trans
                 &trans      &trans             &trans   &trans   &trans        &trans   &trans
             >;
         };
@@ -188,9 +199,9 @@
 
         nav {
             bindings = <
-    &kp ESC  &kp TAB            &kp LS(TAB) &kp K_APP    &kp ESC         &none    &kp LC(LEFT) &kp UP    &kp LC(RIGHT) &kp BSPC
-    &kp LGUI &hm LSHFT LS(TAB)  &kp LALT    &kp LCTRL    &none           &none    &kp LEFT     &kp DOWN  &kp RIGHT     &hm RGUI DEL
-    &mo BT   &tog COLEMAK       &none       &none        &none           &none    &kp HOME     &kp END   &kp PG_UP     &kp PG_DN
+    &kp ESC  &kp TAB               &kp LS(TAB) &kp K_APP    &kp ESC         &none    &kp LC(LEFT) &kp UP    &kp LC(RIGHT) &kp BSPC
+    &kp LGUI &hmnav LSHFT LS(TAB)  &kp LALT    &kp LCTRL    &none           &none    &kp LEFT     &kp DOWN  &kp RIGHT     &hm RGUI DEL
+    &mo BT   &tog COLEMAK          &none       &none        &none           &none    &kp HOME     &kp END   &kp PG_UP     &kp PG_DN
       &trans   &trans    &trans      &trans       &trans      &trans   &trans
             >;
         };
