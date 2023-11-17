@@ -29,9 +29,9 @@
 
 / {
     behaviors {
-        hmsk: homerow_mods {
+        hmsk: homerow_mods_for_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
+            label = "homerow_mods_for_shift";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <TAP_TIMEOUT>;
