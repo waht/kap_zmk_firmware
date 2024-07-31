@@ -43,7 +43,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "thumb_shift";
             #binding-cells = <0>;
-            bindings = <&hmsk RSHFT RET>, <&caps_word>;
+            bindings = <&lt NAV RET>, <&caps_word>;
             mods = <(MOD_RSFT)>;
         };
         hm: homerow_mods {
@@ -175,9 +175,9 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //         |   SHIFT  |  SPACE  | LEFT  |  RIGHT  | RESET  |        |  RETURN |  RESET  |
             bindings = <
-    &lt NAV Q    &kp W        &kp E        &kp R        &kp T                         &kp Y   &kp U        &kp I        &kp O          &kp P
-    &kp A        &hml LSHFT S &hml LALT D  &hml LCTRL F &kp G                         &kp H   &hmr RCTRL J &hm RALT K   &hmr RSHFT L   &hmr RGUI SEMI
-    &hm LSHFT Z  &lt FUN X    &kp C        &kp V        &kp B                         &kp N   &kp M        &kp COMMA    &hmr RSHFT DOT &lt FUN FSLH
+    &lt NAV Q    &kp W        &kp E        &kp R        &kp T                         &kp Y       &kp U        &kp I        &kp O          &kp P
+    &kp A        &hml LSHFT S &hml LALT D  &hml LCTRL F &kp G                         &kp H       &hmr RCTRL J &hm RALT K   &hmr RSHFT L   &hmr RGUI SEMI
+    &hm LSHFT Z  &lt FUN X    &kp C        &kp V        &kp B                         &lt FUN N   &kp M        &kp COMMA    &hmr RSHFT DOT &lt FUN FSLH
                 &kp DEL  &lt NUM_SYM SPACE &kp BSPC     &kp RET &bootloader    &shift &bootloader
             >;
         };
@@ -209,7 +209,7 @@
             bindings = <
     &trans &trans &trans &trans &trans          &kp F1  &kp F2        &kp F3       &kp F4           &kp F5
     &trans &trans &trans &trans &trans          &kp F6  &hmr RCTRL F7 &hmr LALT F8 &hmr RSHFT F9    &hmr RGUI F10
-    &trans &trans &trans &trans &trans          &kp F11 &kp F12       &kp PSCRN    &kp PAUSE_BREAK  &none
+    &trans &trans &trans &trans &trans          &kp F11 &kp F12       &kp PSCRN    &kp PAUSE_BREAK  &kp INS
       &trans &trans &trans &trans &trans       &trans  &none
             >;
         };
