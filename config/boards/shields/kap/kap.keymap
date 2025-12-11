@@ -124,6 +124,19 @@
             bindings = <&kp LC(BSPC)>;
         };
 
+        combo_gb_t {
+            timeout-ms = <COMBO_TIMEOUT>;
+            require-prior-idle-ms = <COMBO_IDLE>;
+            key-positions = <14 24>;
+            bindings = <&kp T>;
+        };
+        combo_hn_y {
+            timeout-ms = <COMBO_TIMEOUT>;
+            require-prior-idle-ms = <COMBO_IDLE>;
+            key-positions = <15 25>;
+            bindings = <&kp Y>;
+        };
+
         combo_as_save {
             timeout-ms = <COMBO_TIMEOUT>;
             require-prior-idle-ms = <COMBO_IDLE>;
